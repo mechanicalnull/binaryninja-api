@@ -3842,7 +3842,8 @@ namespace BinaryNinja
 			const ILSourceLocation& loc = ILSourceLocation());
 		ExprId Switch(ExprId condition, ExprId defaultExpr, const std::vector<ExprId>& cases,
 			const ILSourceLocation& loc = ILSourceLocation());
-		ExprId Case(ExprId condition, ExprId expr, const ILSourceLocation& loc = ILSourceLocation());
+		ExprId Case(const std::vector<ExprId>& condition, ExprId expr,
+			const ILSourceLocation& loc = ILSourceLocation());
 		ExprId Break(const ILSourceLocation& loc = ILSourceLocation());
 		ExprId Continue(const ILSourceLocation& loc = ILSourceLocation());
 		ExprId Jump(ExprId dest, const ILSourceLocation& loc = ILSourceLocation());

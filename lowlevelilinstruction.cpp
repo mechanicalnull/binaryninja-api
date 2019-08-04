@@ -1608,9 +1608,9 @@ RegisterValue LowLevelILInstructionBase::GetValue() const
 }
 
 
-PossibleValueSet LowLevelILInstructionBase::GetPossibleValues() const
+PossibleValueSet LowLevelILInstructionBase::GetPossibleValues(const set<BNDataFlowQueryOption>& options) const
 {
-	return function->GetPossibleExprValues(*(const LowLevelILInstruction*)this);
+	return function->GetPossibleExprValues(*(const LowLevelILInstruction*)this, options);
 }
 
 
