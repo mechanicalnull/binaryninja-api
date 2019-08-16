@@ -291,7 +291,8 @@ extern "C"
 		ImportedFunctionSymbol = 2,
 		DataSymbol = 3,
 		ImportedDataSymbol = 4,
-		ExternalSymbol = 5
+		ExternalSymbol = 5,
+		LibraryFunctionSymbol = 6
 	};
 
 	enum BNSymbolBinding
